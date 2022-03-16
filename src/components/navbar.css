@@ -68,6 +68,12 @@
 }
 
 @media screen and (max-width: 990px) {
+  .header {
+    display: block;
+    position: fixed;
+    background: #134b8a;
+    height: 50px;
+  }
   .logo-img img {
     display: flex;
     border-radius: 4px;
@@ -81,6 +87,6 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 15px;
   }
 }

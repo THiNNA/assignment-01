@@ -1,11 +1,10 @@
 .profile-img {
   width: 60px;
-  height: 60px;
+  height: 80px;
   border-radius: 10px;
 }
 .row-title {
-  margin-right: 0px;
-  padding: 16px;
+  padding: 10px 22px 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -31,7 +30,7 @@
 }
 
 .row-productimg {
-  padding: 0px;
+  padding: 16px;
   margin-left: auto;
   margin-right: 0px;
 }
@@ -64,10 +63,33 @@
 
   .text-title h5 {
     font-weight: bold;
-    padding: 5px;
+    font-size: 26px;
+    padding: 0px;
+    margin-left: 5px;
   }
   .text-title Col {
     display: flex;
     padding: 5px;
+  }
+  .text-title span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #134b8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 25px;
+    margin-top: -65px;
+    margin-bottom: auto;
+  }
+  .icon-rate {
+    display: none;
+  }
+  .text-title small {
+    font-size: 16px;
+    margin-left: 5px;
   }
 }

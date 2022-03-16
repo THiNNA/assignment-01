@@ -8,7 +8,11 @@ function Carditem(props) {
 
     return (
         <Col>
-            <Card>
+            <Card style={{
+                background: "#FFFFFF",
+                boxShadow: "0px 3px 3px rgba(0, 0, 0, 0.25)",
+                borderRadius: "10px"
+            }}>
                 <Card.Img className="profile-img-mobile" variant="top" src={profile_image_url} />
                 <Row className="row-title">
                     <Col lg={3} md={12} xs={12}>
@@ -20,24 +24,20 @@ function Carditem(props) {
                         <Row>
                             <Col md={12} style={{ display: "flex", justifyContent: "space-between" }}>
                                 <small><BsCalendar3 /> {operation_time[0].time_open} น. - {operation_time[0].time_close} น.</small>
-
                                 <span><BsFillCircleFill className="icon-rate" /> {rating}</span>
+
                             </Col>
                         </Row>
                     </Col>
                 </Row>
                 <Card.Body>
-                    <Card.Title>
-                        <Row className="row-productimg">
-                            {Array.from({ length: images.length }).map((_, idx) => (
-                                <Col style={{ padding: "0px" }}>
-                                    <Card.Img variant="top" className="product-img" src={images[idx]} />
-                                </Col>
-
-                            ))}
-                        </Row>
-                    </Card.Title>
-
+                    <Row style={{ padding: "16px" }}>
+                        {Array.from({ length: images.length }).map((_, idx) => (
+                            <Col style={{ padding: "0px" }}>
+                                <Card.Img variant="top" className="product-img" src={images[idx]} />
+                            </Col>
+                        ))}
+                    </Row>
 
                 </Card.Body>
             </Card>

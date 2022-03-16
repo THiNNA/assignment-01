@@ -4,11 +4,11 @@ import "./search.css"
 
 function Search() {
     return (
-        <Row style={{ marginBottom: "20px" }}>
+        <Row style={{ marginBottom: "10px" }}>
             <Col md={12} lg={6} >
                 <p className="text-header">Place List</p>
             </Col>
-            <Col md={12} lg={2}>
+            <Col md={12} lg={2} style={{ marginBottom: "20px" }}>
                 <Form.Select size="sm" aria-label="Default select example"
                     style={{
                         height: "40px",
@@ -27,7 +27,7 @@ function Search() {
 
                 </Form.Select>
             </Col >
-            <Col md={12} lg={4}>
+            <Col md={12} lg={4} style={{ marginBottom: "10px" }}>
 
                 <Form.Control size="sm" type="text" placeholder=" Search name... "
                     style={{
