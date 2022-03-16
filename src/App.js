@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import NavHeader from "./components/navbar"
+import Sideheader from "./components/sidebar"
+import Carditem from "./components/carditem"
+import Search from "./components/search"
+import { Col, Container, Row, } from "react-bootstrap";
+import "./App.css"
+
+import data from "./market.json";
+const marketData = data;
 
 function App() {
+  const marketElements = marketData.map((market, index) => {
+    return <Carditem key={index} marketList={market} />
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+
+      <NavHeader />
+      <Sideheader />
+
+      <Container fluid>
+        <div className="row-content">
+          <Search />
+          <Row xs={1} md={1} lg={3} className="g-4">
+            {marketElements}
+
+          </Row>
+        </div>
+      </Container>
+    </div >
   );
 }
 

@@ -1,0 +1,86 @@
+.header {
+  display: block;
+  position: fixed;
+  background: #134b8a;
+  height: 50px;
+}
+.container {
+  max-width: 100%;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.logo-img img {
+  display: none;
+  border-radius: 4px;
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+}
+
+.menu-r {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-r li {
+  padding-right: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.menu-img img {
+  display: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: -8px;
+}
+
+.menu-r li span {
+  display: flex;
+  margin-top: 3px;
+}
+.menu-r li icon {
+  display: flex;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+.status {
+  border: 2px;
+  border-radius: 2px;
+  border-color: white;
+  color: red;
+  padding: 1px 3px 3px 3px;
+  position: absolute;
+  top: 15px;
+  margin-left: -10px;
+  font-size: 6px;
+}
+.menu-r li collap {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 990px) {
+  .logo-img img {
+    display: flex;
+    border-radius: 4px;
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+  }
+
+  .menu-img img {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
